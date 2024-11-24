@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('rave.gif') no-repeat center center fixed; /* Replace with your GIF file path */
+    background-size: cover;
+    color: white;
+}
+
+.feedback-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.feedback-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black box */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 400px; /* Set a width for the feedback box */
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fff; /* White border */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+    color: white;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: white; /* White button */
+    color: black; /* Black text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: black; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+.privacy-statement {
+    margin-top: 15px;
+    font-size: 12px;
+    text-align: center;
+}

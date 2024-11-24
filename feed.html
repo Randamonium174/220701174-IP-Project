@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feed.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <div class="feedback-background">
+        <div class="feedback-container">
+            <h2>We Value Your Feedback</h2>
+            <form id="feedbackForm" action="feedback.php" method="POST">
+                <label for="name">Name (Optional):</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email (Optional):</label>
+                <input type="email" id="email" name="email">
+
+                <label for="rating">Rate Our Support:</label>
+                <select id="rating" name="rating" required>
+                    <option value="" disabled selected>Select a rating</option>
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+
+                <label for="feedbackType">Feedback Type:</label>
+                <select id="feedbackType" name="feedbackType" required>
+                    <option value="" disabled selected>Select feedback type</option>
+                    <option value="positive">Positive</option>
+                    <option value="negative">Negative</option>
+                </select>
+
+                <label for="satisfaction">How satisfied were you with the support you received?</label>
+                <select id="satisfaction" name="satisfaction" required>
+                    <option value="" disabled selected>Select satisfaction level</option>
+                    <option value="very_satisfied">Very Satisfied</option>
+                    <option value="satisfied">Satisfied</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="dissatisfied">Dissatisfied</option>
+                    <option value="very_dissatisfied">Very Dissatisfied</option>
+                </select>
+
+                <label for="recommendation">Would you recommend our services to others?</label>
+                <select id="recommendation" name="recommendation" required>
+                    <option value="" disabled selected>Select your answer</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label for="improvements">What can we do to improve our support services?</label>
+                <textarea id="improvements" name="improvements" rows="4" placeholder="Your suggestions..."></textarea>
+
+                <label>
+                    <input type="checkbox" id="followUp" name="followUp"> 
+                    I would like to be contacted for further discussion.
+                </label>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+
+            <div class="privacy-statement">
+                <p>Your feedback is important to us. We will use it to improve our services. All information will be kept confidential.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="feed.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
